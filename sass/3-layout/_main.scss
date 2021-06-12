@@ -1,14 +1,19 @@
 main {
     position: relative;
+
+    section {
+        // border: 2px solid blue;
+        margin: 40vh 0;
+        .heading {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            letter-spacing: 2px;  
+        } 
+    }
     
-    .heading {
-        writing-mode: vertical-rl;
-        text-orientation: upright;
-        font-weight: 400;
-        text-transform: uppercase;
-        font-size: 0.7rem;
-        letter-spacing: 2px;  
-    } 
     .icons {
         @include icons__parent;
         bottom: 5em;
