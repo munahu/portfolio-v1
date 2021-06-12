@@ -1,0 +1,9 @@
+@mixin icons__parent {
+    position: absolute;
+}
+
+@mixin icons__children {
+    width: 1.3em;
+    margin-right: 1em;
+}
+
