@@ -314,17 +314,18 @@ main {
 
 main section {
   margin: 40vh 0;
+  position: relative;
 }
 
 main section .heading {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  text-orientation: upright;
+  position: absolute;
+  top: -5em;
+  color: #4e4e4e;
+  font-size: 1.4em;
   font-weight: 400;
-  text-transform: uppercase;
-  font-size: 0.7rem;
   letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1em;
 }
 
 main .icons {
@@ -386,11 +387,14 @@ main .icons img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 50vh 0;
 }
 
 .work .work__project__info {
-  height: 100%;
+  width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -404,6 +408,7 @@ main .icons img {
 }
 
 .work .work__project__info__name {
+  margin-left: -5px;
   font-size: 5rem;
   font-weight: bold;
 }
@@ -412,14 +417,31 @@ main .icons img {
   color: #4e4e4e;
   margin: 1em 0;
   font-size: 1.2rem;
-  width: 75%;
+  width: 85%;
   line-height: 1.6em;
 }
 
 .work .work__project__info__stack {
   margin: 1em 0;
   font-size: 0.9rem;
-  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.work .work__project__info__stack span {
+  margin-right: 0.3em;
+}
+
+.work .work__project__info__links {
+  margin: 2em 0;
+  font-size: 0.9rem;
+}
+
+.work .work__project__info__links__link {
+  text-transform: uppercase;
+  margin-right: 1em;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-bottom: 2px solid #4e4e4e;
 }
 
 .work .work__project__imgContainer {
@@ -429,12 +451,29 @@ main .icons img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 60%;
-  margin-right: 9em;
+  width: 45%;
 }
 
 .work .work__project__imgContainer img {
   margin: 0 auto;
   width: 100%;
+}
+
+.contact {
+  height: 10vh;
+}
+
+.contact .heading {
+  top: -3em;
+}
+
+.contact__message {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.contact__message__link {
+  -webkit-text-decoration: 2px underline #252525;
+          text-decoration: 2px underline #252525;
 }
 /*# sourceMappingURL=main.css.map */

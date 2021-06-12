@@ -1,0 +1,17 @@
+.contact {
+    height: 10vh;
+
+
+    .heading {
+        top: -3em;
+    }
+
+    &__message {
+        display: block;
+        font-size: 1.2rem;
+
+        &__link {
+            text-decoration: 2px underline $primaryColor;
+        }
+    }
+}

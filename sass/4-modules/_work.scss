@@ -1,15 +1,18 @@
 .work {
+
     .work__project {
         display: flex;
+        justify-content: space-between;
         margin: 50vh 0;
 
         &__info {
-            height: 100%;
+            width: 45%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
 
             &__name {
+                margin-left: -5px;
                 font-size: 5rem;
                 font-weight: bold;
             }
@@ -18,22 +21,39 @@
                 color: $secondaryColor;
                 margin: 1em 0;
                 font-size: 1.2rem;
-                width: 75%;
+                width: 85%;
                 line-height: 1.6em;
             }
 
             &__stack {
                 margin: 1em 0;
                 font-size: 0.9rem;
-                letter-spacing: 1px;
+                font-weight: 500;
+
+                span {
+                    margin-right: 0.3em;
+                }
+            }
+
+            &__links {
+                // border: 2px solid blue;
+                margin: 2em 0;
+                font-size: 0.9rem;
+
+                &__link {
+                    text-transform: uppercase;
+                    margin-right: 1em;
+                    font-weight: bold;
+                    font-size: 0.9rem;
+                    border-bottom: 2px solid $secondaryColor;
+                }
             }
         }
 
         &__imgContainer {
             display: flex;
             justify-content: center;
-            width: 60%;
-            margin-right: 9em;
+            width: 45%;
 
             img {
                 margin: 0 auto;
