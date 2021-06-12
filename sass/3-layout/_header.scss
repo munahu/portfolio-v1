@@ -18,6 +18,14 @@ header {
         text-transform: uppercase;
     }
 
+    .hamburgerIcon {
+        position: absolute;
+        top: 2em;
+        right: 0;
+        width: 3em;
+        right: 4em;
+    }
+
     .icons {
         @include icons__parent;
         bottom: 5em;
