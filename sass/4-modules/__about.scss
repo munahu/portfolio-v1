@@ -5,8 +5,12 @@
     &__info {
         width: 70%;
         margin: 0 auto;
-        font-size: 1.4rem;
-        line-height: 1.5em;
+        font-size: 1.6rem;
+        line-height: 1.8em;
         color: $secondaryColor;
+
+        &__line {
+           display: block;
+        }
     }
 }

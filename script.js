@@ -1,5 +1,13 @@
 gsap.registerPlugin(ScrollTrigger);
 
+  gsap.from(".about__info__line", {
+    scrollTrigger: ".about__info__line",
+    duration: 1.5,
+    opacity: 0,
+    stagger: .2,
+  })
+
+
 const imgs = gsap.utils.toArray(".work__project__imgContainer");
 
 imgs.forEach(element => {
@@ -13,7 +21,6 @@ imgs.forEach(element => {
 const projectText = gsap.utils.toArray(".work__project__info");
 
 projectText.forEach(element => {
-  console.log(element);
   gsap.from(element, {
     scrollTrigger: element,
     duration: 1,
