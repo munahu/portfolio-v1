@@ -1,23 +1,16 @@
 .work {
-    margin: 25vh 0;
-    padding-top: 5em;
-    position: relative;
-
-    .heading {
-        position: absolute;
-        top: 8.4em;
-    }
+    padding: 10em 0;
+    margin: 45vh 0;
+    display: flex;
+    width: 300%;
 
     &__project {
-        width: 80%;
-        margin: 0 auto;
-        margin-bottom: 10em;
+        width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+    }
 
-        img {
-            width: 70%;
-            margin: 0 auto;
-        }
+    img {
+        width: 60%;
     }
 }

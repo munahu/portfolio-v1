@@ -246,6 +246,10 @@ a {
   color: black;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .wrapper {
   width: 80%;
   margin: 0 auto;
@@ -376,30 +380,25 @@ main .icons img {
 }
 
 .work {
-  margin: 25vh 0;
-  padding-top: 5em;
-  position: relative;
-}
-
-.work .heading {
-  position: absolute;
-  top: 8.4em;
-}
-
-.work__project {
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 10em;
+  padding: 10em 0;
+  margin: 45vh 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 300%;
 }
 
-.work__project img {
-  width: 70%;
-  margin: 0 auto;
+.work__project {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.work img {
+  width: 60%;
 }
 /*# sourceMappingURL=main.css.map */
