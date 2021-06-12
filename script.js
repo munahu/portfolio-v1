@@ -1,16 +1,22 @@
 gsap.registerPlugin(ScrollTrigger);
 
-let sections = gsap.utils.toArray(".work__project");
+const imgs = gsap.utils.toArray(".work__project__imgContainer");
 
-gsap.to(sections, {
-  xPercent: -100 * (sections.length - 1),
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".work",
-    pin: true,
-    scrub: 1,
-    snap: 1 / (sections.length - 1),
-    end: () => "+=" + document.querySelector(".work").offsetWidth
-  }
+imgs.forEach(element => {
+  gsap.from(element, {
+    scrollTrigger: element,
+    duration: 1,
+    y: 200
+  })
 });
 
+const projectText = gsap.utils.toArray(".work__project__info");
+
+projectText.forEach(element => {
+  console.log(element);
+  gsap.from(element, {
+    scrollTrigger: element,
+    duration: 1,
+    x: -200
+  })
+});
