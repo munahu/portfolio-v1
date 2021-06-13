@@ -382,19 +382,17 @@ main .icons img {
 }
 
 .about__info {
-  width: 70%;
   margin: 0 auto;
   line-height: 1.8em;
   color: #4e4e4e;
 }
 
-.about__info__line {
-  display: block;
-}
-
 @media (min-width: 960px) {
   .about {
     font-size: 1.6rem;
+  }
+  .about__info {
+    width: 70%;
   }
 }
 
@@ -402,11 +400,17 @@ main .icons img {
   .about {
     font-size: 1.3rem;
   }
+  .about__info {
+    width: 80%;
+  }
 }
 
 @media (max-width: 599px) {
   .about {
     font-size: 1rem;
+  }
+  .about__info {
+    width: 90%;
   }
 }
 
