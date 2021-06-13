@@ -479,6 +479,12 @@ main .icons img {
     width: 85%;
     max-width: 522px;
   }
+  .movies .work__project__info {
+    padding-left: 6em;
+  }
+  .movies .work__project__info__description {
+    width: 100%;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 959px) {
