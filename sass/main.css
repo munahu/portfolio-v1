@@ -384,13 +384,30 @@ main .icons img {
 .about__info {
   width: 70%;
   margin: 0 auto;
-  font-size: 1.6rem;
   line-height: 1.8em;
   color: #4e4e4e;
 }
 
 .about__info__line {
   display: block;
+}
+
+@media (min-width: 960px) {
+  .about {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 959px) {
+  .about {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 599px) {
+  .about {
+    font-size: 1rem;
+  }
 }
 
 .work .work__project__info {
