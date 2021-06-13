@@ -2,6 +2,7 @@
 
     .work__project {
         &__info {
+            margin-bottom: 3em;
             display: flex;
             flex-direction: column;
 
@@ -31,7 +32,6 @@
                 margin: 2em 0;
 
                 &__link {
-                    font-size: 0.9rem;
                     text-transform: uppercase;
                     margin-right: 1em;
                     font-weight: bold;
@@ -42,13 +42,10 @@
 
         &__imgContainer {
             display: flex;
-            justify-content: center;
-            margin: 3em 0;
-            border: 1px solid rgb(235, 235, 235);
+            justify-content: flex-end;
 
             img {
-                margin: 0 auto;
-                width: 100%;
+                object-fit: cover;
             }
         }
     }
@@ -58,7 +55,7 @@
     .work__project {
         display: flex;
         justify-content: space-between;
-        margin: 25vh 0;
+        margin: 35vh 0;
 
         &__info {
             width: 45%;
@@ -79,16 +76,25 @@
                 }
             }
 
+            &__links {
+                &__link {
+                    font-size: 0.9rem;
+                }
+            }
+
         }
 
         &__imgContainer {
-            width: 85%;
-            max-width: 522px;
+            width: 60%;
+            img {
+                min-width: 456px;
+                width: 100%;
+            }
         }
     }
 
     .movies {
-        
+    
         .work__project__info {
             padding-left: 6em;
 
@@ -101,6 +107,8 @@
 
 @media(min-width:600px) and (max-width: 959px) {
     .work__project {
+        margin: 35vh 0;
+
         &__info {
 
             &__name {
@@ -120,20 +128,36 @@
         }
 
         &__imgContainer {
-            width: 70%;
-            margin: 3em 0;
-            max-width: 480px;
+            width: 100%;
+            img {
+                min-width: 446px;
+                width: 60%;
+            }
+        }
+    }
+
+    .work__project.movies {
+        display: flex;
+        flex-direction: column;
+
+        .work__project__info {
+            order: 1;
+        }
+
+        .work__project__imgContainer {
+            order: 2;
         }
     }
 }
 
 @media(max-width: 599px) {
     .work__project {
+        margin: 15vh 0;
 
         &__info {
 
             &__name {
-                font-size: 3rem;
+                font-size: 2.3rem;
             }
 
             &__links {
@@ -144,9 +168,21 @@
         }
 
         &__imgContainer {
-            width: 100%;
-            margin: 3em 0;
+            img {
+                min-width: 100%;    
+            }
+        }
+    }
+    .work__project.movies {
+        display: flex;
+        flex-direction: column;
+
+        .work__project__info {
+            order: 1;
+        }
+
+        .work__project__imgContainer {
+            order: 2;
         }
     }
 }
-
