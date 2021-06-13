@@ -3,6 +3,12 @@ body {
 }
 
 .wrapper {
-    width: 80%;
+    width: 90vw;
     margin: 0 auto;
+}
+
+@media(min-width:960px) {
+    .wrapper {
+        width: 80vw;
+    }
 }
