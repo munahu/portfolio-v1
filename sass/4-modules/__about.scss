@@ -12,9 +12,9 @@
 
 @media(min-width:960px) {
     .about {
-        font-size: 1.6rem;
-
+        
         &__info {
+            font-size: 1.6rem;
             width: 70%;
         }
     }
@@ -22,9 +22,9 @@
 
 @media(min-width:600px) and (max-width: 959px) {
     .about {
-        font-size: 1.3rem;
-
+        
         &__info {
+            font-size: 1.3rem;
             width: 80%;
         }
     }
@@ -33,9 +33,9 @@
 
 @media(max-width: 599px) {
     .about {
-        font-size: 1rem;
-
+        
         &__info {
+            font-size: 1.2rem;
             width: 90%;
         }
     }

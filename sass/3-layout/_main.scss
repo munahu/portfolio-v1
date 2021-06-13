@@ -2,14 +2,12 @@ main {
     position: relative;
 
     section {
-        margin: 40vh 0;
         position: relative;
 
         .heading {
             position: absolute;
             top: -5em;
             color: $secondaryColor;
-            font-size: 1.4em;
             font-weight: 400;
             letter-spacing: 2px;
             text-transform: uppercase;
@@ -23,6 +21,24 @@ main {
 
         img {
             @include icons__children;
+        }
+    }
+}
+
+@media(min-width:960px) {
+    section {
+        margin: 40vh 0;
+        .heading {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media(max-width: 959px) {
+    section {
+        margin: 30vh 0;
+        .heading {
+            font-size: 1rem;
         }
     }
 }

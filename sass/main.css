@@ -319,7 +319,6 @@ main {
 }
 
 main section {
-  margin: 40vh 0;
   position: relative;
 }
 
@@ -327,7 +326,6 @@ main section .heading {
   position: absolute;
   top: -5em;
   color: #4e4e4e;
-  font-size: 1.4em;
   font-weight: 400;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -342,6 +340,24 @@ main .icons {
 main .icons img {
   width: 1.3em;
   margin-right: 1em;
+}
+
+@media (min-width: 960px) {
+  section {
+    margin: 40vh 0;
+  }
+  section .heading {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 959px) {
+  section {
+    margin: 30vh 0;
+  }
+  section .heading {
+    font-size: 1rem;
+  }
 }
 
 .header__intro {
@@ -388,28 +404,22 @@ main .icons img {
 }
 
 @media (min-width: 960px) {
-  .about {
-    font-size: 1.6rem;
-  }
   .about__info {
+    font-size: 1.6rem;
     width: 70%;
   }
 }
 
 @media (min-width: 600px) and (max-width: 959px) {
-  .about {
-    font-size: 1.3rem;
-  }
   .about__info {
+    font-size: 1.3rem;
     width: 80%;
   }
 }
 
 @media (max-width: 599px) {
-  .about {
-    font-size: 1rem;
-  }
   .about__info {
+    font-size: 1.2rem;
     width: 90%;
   }
 }
@@ -597,11 +607,23 @@ main .icons img {
 
 .contact__message {
   display: block;
-  font-size: 1.2rem;
 }
 
 .contact__message__link {
   -webkit-text-decoration: 2px underline #252525;
           text-decoration: 2px underline #252525;
+}
+
+@media (min-width: 960px) {
+  .contact__message {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 959px) {
+  .contact__message {
+    font-size: 1rem;
+    line-height: 1.6em;
+  }
 }
 /*# sourceMappingURL=main.css.map */

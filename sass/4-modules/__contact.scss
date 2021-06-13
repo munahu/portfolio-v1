@@ -8,10 +8,26 @@
 
     &__message {
         display: block;
-        font-size: 1.2rem;
 
         &__link {
             text-decoration: 2px underline $primaryColor;
+        }
+    }
+}
+
+@media(min-width:960px) {
+    .contact {
+        &__message {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+@media(max-width: 959px) {
+    .contact {
+        &__message {
+            font-size: 1rem;
+            line-height: 1.6em;
         }
     }
 }
