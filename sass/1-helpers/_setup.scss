@@ -10,8 +10,17 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 h1,
 h2,
-p {
+p,
+ul {
     margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
 }
 
 

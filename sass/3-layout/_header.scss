@@ -18,4 +18,32 @@ header {
             @include icons__children;
         }
     }
+
+    nav {
+        margin-top: 1.5em;
+        ul {
+            display: flex;
+            justify-content: flex-end;
+
+            a {
+                font-size: 0.9rem;
+                margin: 0 1em;
+            }
+
+            a:hover {
+                border-bottom: 3px solid black;
+            }
+        }
+    }
+}
+
+
+
+@media(max-width: 599px) {
+    header {
+        .icons {
+            @include icons__parent;
+            left: 0;
+        }
+    }
 }
