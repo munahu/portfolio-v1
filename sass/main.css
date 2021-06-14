@@ -276,10 +276,10 @@ header {
 }
 
 header .hamburgerIcon {
+  width: 2em;
   position: absolute;
-  top: 2em;
-  right: 0;
-  width: 3em;
+  right: 1em;
+  display: none;
 }
 
 header .icons {
@@ -319,6 +319,12 @@ header nav ul a:hover {
   header .icons {
     position: absolute;
     left: 0;
+  }
+  header .hamburgerIcon {
+    display: block;
+  }
+  header ul a {
+    display: none;
   }
 }
 
@@ -660,7 +666,7 @@ main .icons img {
 
 @media (max-width: 959px) {
   .contact__message {
-    font-size: 1rem;
+    font-size: 1.3rem;
     line-height: 1.6em;
   }
 }

@@ -3,10 +3,10 @@ header {
     position: relative;
 
     .hamburgerIcon {
+        width: 2em;
         position: absolute;
-        top: 2em;
-        right: 0;
-        width: 3em;
+        right: 1em;
+        display: none
     }
 
     .icons {
@@ -21,6 +21,7 @@ header {
 
     nav {
         margin-top: 1.5em;
+
         ul {
             display: flex;
             justify-content: flex-end;
@@ -44,6 +45,16 @@ header {
         .icons {
             @include icons__parent;
             left: 0;
+        }
+
+        .hamburgerIcon {
+            display: block;
+        }
+
+        ul {
+            a {
+                display: none;
+            }
         }
     }
 }

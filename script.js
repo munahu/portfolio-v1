@@ -1,6 +1,8 @@
+gsap.registerPlugin();
+
 ScrollTrigger.matchMedia({
 	
-  // large
+  // large screens
   "(min-width: 960px)": function() {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -28,7 +30,7 @@ ScrollTrigger.matchMedia({
     },
 
 	
-  // all 
+  // all screens
   "all": function() {
     gsap.from(".about__info__line", {
       scrollTrigger: ".about__info__line",
