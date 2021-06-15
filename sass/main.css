@@ -266,6 +266,10 @@ a {
   }
 }
 
+.lock {
+  overflow: hidden;
+}
+
 html {
   font-family: 'Satoshi', sans-serif;
 }
@@ -304,6 +308,14 @@ header nav .navlinks a:hover {
   border-bottom: 3px solid black;
 }
 
+header nav .visible {
+  display: block;
+}
+
+header nav .hidden {
+  display: none;
+}
+
 @media (max-width: 599px) {
   header .hamburgerIcon {
     display: block;
@@ -337,10 +349,10 @@ header nav .navlinks a:hover {
     top: 2em;
     right: 1em;
   }
-  header .navlinks__mobile li {
+  header .navlinks__mobile__link {
     margin: 1em 0;
   }
-  header .navlinks__mobile li a {
+  header .navlinks__mobile__link a {
     font-size: 2.5rem;
   }
 }
@@ -419,12 +431,12 @@ main .icons img {
 
 .header__intro h1 {
   color: #252525;
-  margin-left: -5px;
   letter-spacing: -1.8px;
 }
 
 .header__intro span {
   margin: 0.7em 0;
+  margin-left: 5px;
   font-weight: 100;
   color: #4e4e4e;
 }

@@ -26,8 +26,12 @@ header {
             }
         }
 
-        .navlinks__mobile{
-            // display: none;
+        .visible {
+            display: block;
+        }
+
+        .hidden {
+            display: none;
         }
     }
 }
@@ -64,7 +68,7 @@ header {
                 right: 1em;
             }
 
-            li {
+            &__link{
                 margin: 1em 0;
 
                 a {
