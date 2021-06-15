@@ -286,7 +286,7 @@ header nav {
   margin-top: 1.5em;
 }
 
-header nav ul {
+header nav .navlinks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,12 +295,12 @@ header nav ul {
           justify-content: flex-end;
 }
 
-header nav ul a {
+header nav .navlinks a {
   font-size: 0.9rem;
   margin: 0 1em;
 }
 
-header nav ul a:hover {
+header nav .navlinks a:hover {
   border-bottom: 3px solid black;
 }
 
@@ -308,8 +308,40 @@ header nav ul a:hover {
   header .hamburgerIcon {
     display: block;
   }
-  header ul a {
+  header .navlinks a {
     display: none;
+  }
+  header .navlinks__mobile {
+    position: absolute;
+    width: 100%;
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 95vh;
+  }
+  header .navlinks__mobile img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 2em;
+    right: 1em;
+  }
+  header .navlinks__mobile li {
+    margin: 1em 0;
+  }
+  header .navlinks__mobile li a {
+    font-size: 2.5rem;
   }
 }
 

@@ -12,7 +12,7 @@ header {
     nav {
         margin-top: 1.5em;
 
-        ul {
+        .navlinks {
             display: flex;
             justify-content: flex-end;
 
@@ -25,6 +25,10 @@ header {
                 border-bottom: 3px solid black;
             }
         }
+
+        .navlinks__mobile{
+            // display: none;
+        }
     }
 }
 
@@ -36,10 +40,38 @@ header {
             display: block;
         }
 
-        ul {
+        .navlinks {
             a {
                 display: none;
             }
+        }
+
+        .navlinks__mobile {
+            position: absolute;
+            width: 100%;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 95vh;
+
+            img {
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                top: 2em;
+                right: 1em;
+            }
+
+            li {
+                margin: 1em 0;
+
+                a {
+                    font-size: 2.5rem;
+                }
+            }
+
         }
     }
 }
