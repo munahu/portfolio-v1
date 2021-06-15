@@ -5,6 +5,16 @@
     flex-direction: column;
     justify-content: center;
 
+    .icons {
+        @include icons__parent;
+        bottom: 4em;
+        left: 5em;
+
+        img {
+            @include icons__children;
+        }
+    }
+
     h1 {
         color: $primaryColor;
         margin-left: -5px;        
@@ -46,6 +56,12 @@
 @media(max-width: 599px) {
     .header__intro {
         margin-left: 0;
+
+        .icons {
+            @include icons__parent;
+            left: 0;
+        }
+
         h1 {
             font-size: 3rem;
         }

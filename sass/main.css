@@ -282,17 +282,6 @@ header .hamburgerIcon {
   display: none;
 }
 
-header .icons {
-  position: absolute;
-  bottom: 4em;
-  left: 5em;
-}
-
-header .icons img {
-  width: 1.3em;
-  margin-right: 1em;
-}
-
 header nav {
   margin-top: 1.5em;
 }
@@ -316,10 +305,6 @@ header nav ul a:hover {
 }
 
 @media (max-width: 599px) {
-  header .icons {
-    position: absolute;
-    left: 0;
-  }
   header .hamburgerIcon {
     display: block;
   }
@@ -389,6 +374,17 @@ main .icons img {
           justify-content: center;
 }
 
+.header__intro .icons {
+  position: absolute;
+  bottom: 4em;
+  left: 5em;
+}
+
+.header__intro .icons img {
+  width: 1.3em;
+  margin-right: 1em;
+}
+
 .header__intro h1 {
   color: #252525;
   margin-left: -5px;
@@ -422,6 +418,10 @@ main .icons img {
 @media (max-width: 599px) {
   .header__intro {
     margin-left: 0;
+  }
+  .header__intro .icons {
+    position: absolute;
+    left: 0;
   }
   .header__intro h1 {
     font-size: 3rem;
@@ -642,7 +642,7 @@ main .icons img {
 }
 
 .contact {
-  height: 10vh;
+  height: 30vh;
 }
 
 .contact .heading {
@@ -650,13 +650,24 @@ main .icons img {
 }
 
 .contact__message {
-  color: #4e4e4e;
+  color: #252525;
   display: block;
 }
 
 .contact__message__link {
   -webkit-text-decoration: 2px underline #252525;
           text-decoration: 2px underline #252525;
+}
+
+.contact .icons {
+  position: absolute;
+  bottom: 0em;
+  left: 0;
+}
+
+.contact .icons img {
+  width: 1.3em;
+  margin-right: 1em;
 }
 
 @media (min-width: 960px) {

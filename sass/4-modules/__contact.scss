@@ -1,17 +1,26 @@
 .contact {
-    height: 10vh;
-
+    height: 30vh;
 
     .heading {
         top: -3em;
     }
 
     &__message {
-        color: $secondaryColor;
+        color: $primaryColor;
         display: block;
 
         &__link {
             text-decoration: 2px underline $primaryColor;
+        }
+    }
+
+    .icons {
+        @include icons__parent;
+        bottom: 0em;
+        left: 0;
+
+        img {
+            @include icons__children;
         }
     }
 }

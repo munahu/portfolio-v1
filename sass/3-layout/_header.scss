@@ -9,16 +9,6 @@ header {
         display: none
     }
 
-    .icons {
-        @include icons__parent;
-        bottom: 4em;
-        left: 5em;
-
-        img {
-            @include icons__children;
-        }
-    }
-
     nav {
         margin-top: 1.5em;
 
@@ -42,11 +32,6 @@ header {
 
 @media(max-width: 599px) {
     header {
-        .icons {
-            @include icons__parent;
-            left: 0;
-        }
-
         .hamburgerIcon {
             display: block;
         }
