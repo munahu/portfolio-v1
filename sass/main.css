@@ -662,6 +662,7 @@ main .icons img {
     font-size: 0.8rem;
   }
   .work__project__imgContainer img {
+    height: 280px;
     min-width: 100%;
   }
   .work__project.movies {
