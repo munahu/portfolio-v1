@@ -10,4 +10,5 @@ $(".navlinks__mobile__link").click(function() {
 
 $(".exit").click(function() {
     $(".navlinks__mobile").toggleClass("hidden");
+    $("body").toggleClass("lock");
 })

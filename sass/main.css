@@ -661,7 +661,7 @@ main .icons img {
 
 @media (max-width: 599px) {
   .work__project {
-    margin-bottom: 3em;
+    margin-bottom: 5.5em;
   }
   .work__project__info__name {
     font-size: 2.3rem;
