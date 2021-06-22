@@ -363,8 +363,6 @@ main {
 
 main section {
   position: relative;
-  margin-bottom: 3em;
-  padding-top: 2em;
 }
 
 main section .heading {
@@ -385,12 +383,21 @@ main .icons img {
 }
 
 @media (min-width: 960px) {
+  section {
+    margin-bottom: 7em;
+    padding-top: 4em;
+  }
   section .heading {
+    margin-bottom: 1.9em;
     font-size: 1.2rem;
   }
 }
 
 @media (max-width: 959px) {
+  section {
+    margin-bottom: 3em;
+    padding-top: 2em;
+  }
   section .heading {
     margin-bottom: 1.8em;
     font-size: 1rem;
@@ -487,6 +494,9 @@ main .icons img {
 }
 
 @media (min-width: 960px) {
+  .about {
+    margin-top: 5em;
+  }
   .about__info {
     font-size: 1.6rem;
     width: 70%;
@@ -552,7 +562,6 @@ main .icons img {
 }
 
 .work .work__project__imgContainer {
-  border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -572,6 +581,8 @@ main .icons img {
 
 @media (min-width: 960px) {
   .work__project {
+    margin-top: 5em;
+    margin-bottom: 10em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -621,6 +632,7 @@ main .icons img {
   }
   .work__project__imgContainer {
     width: 100%;
+    margin-bottom: 5em;
   }
   .work__project__imgContainer img {
     min-width: 446px;
@@ -683,6 +695,7 @@ main .icons img {
 }
 
 .contact {
+  padding: 0;
   padding-bottom: 5em;
 }
 
@@ -708,6 +721,9 @@ main .icons img {
 }
 
 @media (min-width: 960px) {
+  .contact {
+    margin-bottom: 4em;
+  }
   .contact__message {
     font-size: 1.3rem;
   }

@@ -1,10 +1,8 @@
 main {
     position: relative;
-    
+
     section {
         position: relative;
-        margin-bottom: 3em;
-        padding-top: 2em;
 
         .heading {
             color: $secondaryColor;
@@ -26,7 +24,10 @@ main {
 
 @media(min-width:960px) {
     section {
+        margin-bottom: 7em;
+        padding-top: 4em;
         .heading {
+            margin-bottom: 1.9em;
             font-size: 1.2rem;
         }
     }
@@ -34,6 +35,8 @@ main {
 
 @media(max-width: 959px) {
     section {
+        margin-bottom: 3em;
+        padding-top: 2em;
         .heading {
             margin-bottom: 1.8em;
             font-size: 1rem;
