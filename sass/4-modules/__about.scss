@@ -1,6 +1,6 @@
 .about {
     display: flex;
-    align-items: center;
+    flex-direction: column;
 
     &__info {
         margin: 0 auto;

@@ -1,17 +1,16 @@
 main {
     position: relative;
-
+    
     section {
         position: relative;
+        margin-bottom: 3em;
+        padding-top: 2em;
 
         .heading {
-            position: absolute;
-            top: -5em;
             color: $secondaryColor;
             font-weight: 400;
             letter-spacing: 2px;
             text-transform: uppercase;
-            margin-bottom: 1em;
         } 
     }
     
@@ -27,7 +26,6 @@ main {
 
 @media(min-width:960px) {
     section {
-        margin: 40vh 0;
         .heading {
             font-size: 1.2rem;
         }
@@ -36,8 +34,8 @@ main {
 
 @media(max-width: 959px) {
     section {
-        margin: 30vh 0;
         .heading {
+            margin-bottom: 1.8em;
             font-size: 1rem;
         }
     }

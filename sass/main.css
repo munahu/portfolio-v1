@@ -363,16 +363,15 @@ main {
 
 main section {
   position: relative;
+  margin-bottom: 3em;
+  padding-top: 2em;
 }
 
 main section .heading {
-  position: absolute;
-  top: -5em;
   color: #4e4e4e;
   font-weight: 400;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin-bottom: 1em;
 }
 
 main .icons {
@@ -386,19 +385,14 @@ main .icons img {
 }
 
 @media (min-width: 960px) {
-  section {
-    margin: 40vh 0;
-  }
   section .heading {
     font-size: 1.2rem;
   }
 }
 
 @media (max-width: 959px) {
-  section {
-    margin: 30vh 0;
-  }
   section .heading {
+    margin-bottom: 1.8em;
     font-size: 1rem;
   }
 }
@@ -480,9 +474,10 @@ main .icons img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .about__info {
@@ -557,6 +552,7 @@ main .icons img {
 }
 
 .work .work__project__imgContainer {
+  border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -570,6 +566,10 @@ main .icons img {
      object-fit: cover;
 }
 
+.work .portfolio {
+  margin: 0;
+}
+
 @media (min-width: 960px) {
   .work__project {
     display: -webkit-box;
@@ -578,7 +578,6 @@ main .icons img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 35vh 0;
   }
   .work__project__info {
     width: 45%;
@@ -611,9 +610,6 @@ main .icons img {
 }
 
 @media (min-width: 600px) and (max-width: 959px) {
-  .work__project {
-    margin: 35vh 0;
-  }
   .work__project__info__name {
     font-size: 3rem;
   }
@@ -653,7 +649,7 @@ main .icons img {
 
 @media (max-width: 599px) {
   .work__project {
-    margin: 15vh 0;
+    margin-bottom: 3em;
   }
   .work__project__info__name {
     font-size: 2.3rem;
@@ -687,11 +683,7 @@ main .icons img {
 }
 
 .contact {
-  height: 30vh;
-}
-
-.contact .heading {
-  top: -3em;
+  padding-bottom: 5em;
 }
 
 .contact__message {

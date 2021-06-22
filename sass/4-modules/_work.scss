@@ -1,5 +1,5 @@
 .work {
-
+    
     .work__project {
         &__info {
             margin-bottom: 3em;
@@ -41,6 +41,7 @@
         }
 
         &__imgContainer {
+            border: 2px solid red;
             display: flex;
             justify-content: flex-end;
 
@@ -49,13 +50,16 @@
             }
         }
     }
+    
+    .portfolio {
+        margin: 0;
+    }
 }
 
 @media(min-width:960px) {
     .work__project {
         display: flex;
         justify-content: space-between;
-        margin: 35vh 0;
 
         &__info {
             width: 45%;
@@ -107,7 +111,6 @@
 
 @media(min-width:600px) and (max-width: 959px) {
     .work__project {
-        margin: 35vh 0;
 
         &__info {
 
@@ -152,7 +155,7 @@
 
 @media(max-width: 599px) {
     .work__project {
-        margin: 15vh 0;
+        margin-bottom: 3em;
 
         &__info {
 
