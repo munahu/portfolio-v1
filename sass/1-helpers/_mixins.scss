@@ -3,7 +3,17 @@
 }
 
 @mixin icons__children {
-    width: 1.3em;
     margin-right: 1em;
 }
 
+@mixin icons__children__large {
+    width: 1.6em;
+}
+
+@mixin icons__children__medium {
+    width: 1.6em;
+}
+
+@mixin icons__children__small {
+    width: 1.4em;
+}

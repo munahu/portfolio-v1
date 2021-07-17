@@ -10,19 +10,19 @@ header {
     }
 
     nav {
-        margin-top: 1.5em;
+        margin-top: 2em;
 
         .navlinks {
             display: flex;
             justify-content: flex-end;
 
             a {
-                font-size: 0.9rem;
+                font-size: 1.1rem;
                 margin: 0 1em;
             }
 
             a:hover {
-                border-bottom: 3px solid black;
+                border-bottom: 5px solid black;
             }
         }
 
@@ -72,10 +72,10 @@ header {
                 margin: 1em 0;
 
                 a {
-                    font-size: 2.5rem;
+                    font-size: 2rem;
+                    font-weight: 500;
                 }
             }
-
         }
     }
 }

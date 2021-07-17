@@ -5,9 +5,9 @@ main {
         position: relative;
 
         .heading {
-            color: $secondaryColor;
-            font-weight: 400;
-            letter-spacing: 2px;
+            color: $primaryColor;
+            font-weight: 900;
+            letter-spacing: 1px;
             text-transform: uppercase;
         } 
     }
@@ -24,11 +24,11 @@ main {
 
 @media(min-width:960px) {
     section {
-        margin-bottom: 7em;
         padding-top: 4em;
+    
         .heading {
-            margin-bottom: 1.9em;
-            font-size: 1.2rem;
+            margin-bottom: 0.5em;
+            font-size: 3.1rem;
         }
     }
 }

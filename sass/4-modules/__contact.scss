@@ -28,6 +28,12 @@
             font-size: 1.3rem;
         }
     }
+    
+    .icons {
+        img {
+            @include icons__children__large
+        }
+    }
 }
 
 @media(max-width: 959px) {
